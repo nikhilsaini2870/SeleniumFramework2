@@ -113,8 +113,12 @@ public class BaseTest implements ITestListener {
 		}
 	}
 	
-	/*
-	 * @AfterSuite public void teardown() { if (driver != null) driver.quit(); }
-	 */
+	
+	@AfterSuite
+	public void teardown() {
+		if (driver != null)
+			driver.quit();
+	}
+	 
 
 }
