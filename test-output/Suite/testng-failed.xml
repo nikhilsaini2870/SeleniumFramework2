@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="CL.SeleniumFramework.Campaigns.PostCardCampaign">
+        <methods>
+          <include name="loadData"/>
+          <include name="launchApplication"/>
+          <include name="createPostCardCampaign"/>
+          <include name="initializeDriver"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- CL.SeleniumFramework.Campaigns.PostCardCampaign -->
+      <class name="CL.SeleniumFramework.Campaigns.EmailCampaign">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="createEmailCampaign"/>
+          <include name="initializeDriver"/>
+          <include name="closeDriver"/>
+          <include name="loadData"/>
+        </methods>
+      </class> <!-- CL.SeleniumFramework.Campaigns.EmailCampaign -->
+      <class name="CL.SeleniumFramework.Promotions.Promotions">
+        <methods>
+          <include name="loadData"/>
+          <include name="launchApplication"/>
+          <include name="addNewClPromoCode"/>
+          <include name="initializeDriver"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- CL.SeleniumFramework.Promotions.Promotions -->
+      <class name="CL.SeleniumFramework.directConnect.workFlowSystem">
+        <methods>
+          <include name="createNewWorkFlowSystem"/>
+          <include name="launchApplication"/>
+          <include name="initializeDriver"/>
+          <include name="loadData"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- CL.SeleniumFramework.directConnect.workFlowSystem -->
+      <class name="CL.SeleniumFramework.Campaigns.TextCampaign">
+        <methods>
+          <include name="newTextCampaign"/>
+          <include name="loadData"/>
+          <include name="launchApplication"/>
+          <include name="initializeDriver"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- CL.SeleniumFramework.Campaigns.TextCampaign -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
